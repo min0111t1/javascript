@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>105page</title>
+</head>
+<body>
+    
+<h2>선호도 조사입니다.</h2>
+<form>
+성별:
+<input type="radio" name="gender" value="male">남성
+<input type="radio" name="gender" value="female">여성<br>
+과일 선택:
+<input type="checkbox" name="fruits" value="apple" checked>사과
+<input type="checkbox" name="fruits" value="grape">포도
+<input type="checkbox" name="fruits" value="orange">오렌지<br>
+<form action="">
+    <select name="cars">
+        <option value="bmw">BMW</option>
+        <option value="benz">Benz</option>
+        <option value="hyundai" selected>현대자동차 </option>
+        <option value="kia">기아자동차</option>
+    </select>
+  
+</form>
+
+<p>선호하는 브라우저를 선택해주세요.</p>
+<form action="process.jps">
+    <input list="browsers" name="browsers">
+    <datalist id="browsers">
+        <option value="구글크롬">
+            <option value="엣지">
+                <option value="오페라">
+                    <option value="사파리">
+                    <option value="파이어폭스
+                    ">
+        
+    </datalist>
+    <input type="submit">
+</form>
+
+</form>
+<fieldset>
+<legend>인적사항입력</legend>
+이름:        <input type="text"><br>
+전화번호:    <input type="text"><br>
+주소         <input type="text"><br>
+
+</fieldset>
+
+
+</form>
+
+<form action="proc_form.jsp"></form>
+<label for="male">남성</label>
+<input type="radio" name="gender" id="male" value="male"><br>
+<label for="female">여성
+</label>
+<input type="radio" name="gender" id="female" value="female"><br>
+<input type="submit" value="제출">
+
+
+<form enctype="multipart/form-data">
+    <input type="file" accept="image/jpg,image/gif">
+</form>
+
+
+
+
+
+
+</body>
+</html>
