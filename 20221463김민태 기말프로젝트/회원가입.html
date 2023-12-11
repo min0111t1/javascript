@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        input[type=text]{
+            width: 90%;
+            padding: 6px 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        input[type=text]:hover {
+            background-color: bisque;
+        }
+        input[type=text]:focus {
+            font-size: 1.2em;
+        }
+        input[type=submit] {
+            background-color: brown;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+        }
+        input[type=email]{
+            width: 90%;
+            padding: 6px 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        input[type=email]:hover {
+            background-color: bisque;}
+            
+            input[type=email]{
+            width: 90%;
+            padding: 6px 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        input[type=password]:hover {
+            background-color: bisque;}
+    </style>
+</head>
+<body>
+    <div id="page-wrap">
+<from method="post" action="process.jsp">
+<fieldset>
+<legend>회원정보입력</legend>
+<label for="name">아이디</label>
+<input type="text" name="name" id="text1"/>
+<button>중복검사</button><br />
+<label for="password1">패스워드</label>
+<input type="password" name="password1"/><br/>
+<label for="password2">패스워드 확인</label>
+<input type="password" name="password2"/><br/>
+<label for="name">이름</label>
+<input type="text" name="name"/><br/>
+<label for="tel">휴대폰 번호</label>
+<input type="tel" name="tel"/><br/>
+<label for="email">이메일</label>
+<input type="email" name="email"/><br/>
+<label for="dob">생일</label>
+<input type="date" name="dob"/><br/>
+<input type="radio" name="gender" value="Male">남성<br>
+<input type="radio" name="gender" value="Female">여성<br>
+</fieldset>
+<input type="submit" name="submit" value="제출" onclick="alert('서버가 활성화 되지 않았습니다.')">
+
+</from>
+    </div>
+    
+</body>
+</html>
